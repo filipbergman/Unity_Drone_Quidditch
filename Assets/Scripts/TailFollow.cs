@@ -15,9 +15,9 @@ public class TailFollow : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        distance.z -= Input.GetAxis("Mouse ScrollWheel") * sensitivity;
+        //distance.z -= Input.GetAxis("Mouse ScrollWheel") * sensitivity;
 
-        if (Input.GetMouseButton(0)) { 
+        if (false) { 
             transform.Rotate(0f, Input.GetAxis("Mouse X") * sensitivity, 0f, Space.World); 
             transform.Rotate(-Input.GetAxis("Mouse Y") * sensitivity, 0f, 0f, Space.Self); 
         }
